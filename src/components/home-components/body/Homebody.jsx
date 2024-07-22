@@ -4,11 +4,15 @@ import percentsvg from "../../../assets/images/percentsvg.svg"
 import cardsvg from "../../../assets/images/cardsvg.svg"
 import arrowupsvg from "../../../assets/images/arrowtopsvg.svg"
 import carVideo from "../../../assets/video/car-video.mp4"
+import image1 from "../../../assets/images/Rectangle 6.png"
+import image2 from "../../../assets/images/Rectangle 7.png"
+import image3 from "../../../assets/images/Rectangle 8.png"
+import image4 from "../../../assets/images/Rectangle 9.png"
 import "./Homebody.css"
 function Homebody() {
     return (
         <>
-            <h2 className="lease">Why Lease with D&M?</h2>
+            <h1 className="lease">Why Lease with D&M?</h1>
             <section className="item-container">
                 <div className="item">
                     <div className="item-image">
@@ -57,15 +61,44 @@ function Homebody() {
                         <p>The procedures and costs when you return the vehicle at the end of your lease</p>
                     </div>
                 </div>
-                <p>Lease contracts are a commitment and ending them early can be difficult and expensive so it is important to consider your circumstances carefully before you decide.</p>
             </section>
             <section>
-                <h1>WELCOME TO D&M LEASING</h1>
-                <h2>Find out how easy it is to lease from D&M</h2>
+                <h1 className="lease">WELCOME TO D&M LEASING</h1>
+                <h2 className="similar">Find out how easy it is to lease from D&M</h2>
                 <video controls>
                     <source src={carVideo} type="video/mp4">
                     </source>
                 </video>
+            </section>
+            <section>
+                <h1 className="lease">Important Things to Consider</h1>
+                <p className="small-text">Depending on your circumstances and what is important to you, a lease could be a great option for your next vehicle. Below are some important factors that may influence your decision.</p>
+                <div className="box-container">
+                    <div className="consider-box">
+                        <div className="image-contain">
+                            <img src={image1} alt="" />
+                        </div>
+                        <p>Monthly payments on leases are generally 20% - 30% cheaper than loans</p>
+                    </div>
+                    <div className="consider-box">
+                        <div className="image-contain">
+                            <img src={image2} alt="" />
+                        </div>
+                        <p>Easy to upgrade to the newest vehicle model every few years</p>
+                    </div>
+                    <div className="consider-box">
+                        <div className="image-contain">
+                            <img src={image3} alt="" />
+                        </div>
+                        <p>You may be eligible for a tax break if you use the leased vehicle for business purposes</p>
+                    </div>
+                    <div className="consider-box">
+                        <div className="image-contain">
+                            <img src={image4} alt="" />
+                        </div>
+                        <p>There are often fees charged if you drive more than your lease's mileage allowance</p>
+                    </div>
+                </div>
             </section>
         </>
     )

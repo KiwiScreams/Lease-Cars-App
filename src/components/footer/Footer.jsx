@@ -45,8 +45,8 @@ function Footer() {
         <ul>
           <h2 className='main-li main-h2'>Creator About</h2>
           <div className='_flex'>
-            <li>Created by <a href="https://github.com/KiwiScreams" target='_blank' id='SLM'><span>S</span><span>L</span><span>M</span></a>  <i class="fa-brands fa-github"></i></li>
-            <li><a href="https://www.figma.com/community/file/1216769543134582897/lease-cars?searchSessionId=lysw1stq-xlbfkzhduut" target='_blank'>Design in Figma</a>  <i class="fa-brands fa-figma"></i></li>
+            <li>Created by <a href="https://github.com/KiwiScreams" target='_blank' id='SLM'><span>S</span><span>L</span><span>M</span></a>  <i className="fa-brands fa-github"></i></li>
+            <li><a href="https://www.figma.com/community/file/1216769543134582897/lease-cars?searchSessionId=lysw1stq-xlbfkzhduut" target='_blank'>Design in Figma</a>  <i className="fa-brands fa-figma"></i></li>
           </div>
         </ul>
       </footer>

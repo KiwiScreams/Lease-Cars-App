@@ -1,70 +1,98 @@
-footer
-{
+footer {
     background: var(--black-clr);
     padding: 50px 32px;
     color: var(--white-clr);
     margin-top: 150px;
 }
-.footer-container
-{
+
+.footer-container {
     display: flex;
     justify-content: space-between;
     color: var(--white-clr);
     width: 60%;
 }
-.footer-container li
-{
+
+.footer-container li {
     padding: 5px 10px;
     margin-bottom: 20px;
 }
-footer .main-li
-{
+
+footer .main-li {
     font-size: 24px;
     font-weight: 700;
     margin-bottom: 40px;
     text-transform: uppercase;
 }
-footer .img
-{
+
+footer .img {
     width: fit-content;
     margin-top: 50px;
 }
-footer .ul
-{
+
+footer .ul {
     color: var(--white-clr);
     width: fit-content;
     gap: 40px;
     margin: auto;
     margin-top: 40px;
 }
-footer .main-h2
-{
+
+footer .main-h2 {
     text-align: center;
     margin-top: 50px;
 }
-footer div
-{
+
+footer div {
     width: fit-content;
     gap: 20px;
     margin: auto;
 }
-#SLM span:nth-child(1)
-{
+
+#SLM span:nth-child(1) {
     color: red;
 }
-#SLM span:nth-child(2)
-{
+
+#SLM span:nth-child(2) {
     color: green;
 }
-#SLM span:nth-child(3)
-{
+
+#SLM span:nth-child(3) {
     color: blue;
 }
-#SLM:hover span
-{
+
+#SLM:hover span {
     margin-right: 10px;
 }
-#SLM
-{
+
+#SLM {
     padding: 20px 6px;
+}
+
+@media screen and (max-width: 1000px) {
+    footer {
+        padding: 20px 30px;
+    }
+
+    .footer-container {
+        width: 100%;
+    }
+
+    footer .main-li {
+        font-size: 16px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    footer {
+        padding: 20px 30px;
+    }
+
+    .footer-container {
+        width: 100%;
+        flex-wrap: wrap;
+    }
+
+    footer .main-li {
+        font-size: 16px;
+    }
 }
