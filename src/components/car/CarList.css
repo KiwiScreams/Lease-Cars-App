@@ -1,0 +1,46 @@
+.car
+{
+    width: 30%;
+    margin: auto;
+    /* border: 1px solid blue; */
+    border-radius: 10px;
+    overflow: hidden;
+    border-bottom: 1px solid black;
+}
+.car:hover img
+{
+    transform: scale(1.2);
+}
+.car .car-image
+{
+    width: 100%;
+    border-radius: 10px;
+    position: relative;
+}
+.car .car-body
+{
+    padding: 20px 20px 0px 20px;
+    text-align: center;
+}
+.car .name,
+.car .month-price
+{
+    font-weight: 700;
+    font-size: 24px;
+}
+.car .car-body span
+{
+    margin-bottom: 20px;
+    font-size: 16px;
+}
+.car button.btn
+{
+    width: 80%;
+    padding: 10px;
+    margin-bottom: 0;
+    font-size: 20px;
+    border-bottom: none;
+    margin-top: 20px;
+    border-left: none;
+    border-right: none;
+}

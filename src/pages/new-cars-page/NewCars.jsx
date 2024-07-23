@@ -5,11 +5,10 @@ import Cart from "../../components/car/CarList"
 function NewCars() {
     return (
         <>
-            <h1>New Cars</h1>
-            <div className="cars-container _flex">
+            <div className="cars-container">
                 {cars.map((car) =>
-                    <Cart key={car.id} data={car}/>
-                    )}
+                    <Cart key={car.id} data={car} />
+                )}
             </div>
         </>
     )
