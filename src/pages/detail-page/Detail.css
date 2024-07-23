@@ -1,0 +1,74 @@
+.car-detail-container
+{
+    width: 80%;
+    margin: auto;
+    margin-top: 100px;
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+}
+.car-detail-container .car-detail-image
+{
+    width: 100%;
+    aspect-ratio: 2;
+}
+.car-detail-container .car-detail-left
+{
+    width: 50%;
+}
+.car-detail-container .car-detail-image img
+{
+    width: 100%;
+}
+.car-detail-container .car-detail-info
+{
+    max-width: 580px;
+    float: right;
+}
+.car-detail-container .car-detail-info h1
+{
+    font-size: 50px;
+    font-weight: 900;
+    margin: auto;
+    margin-bottom: 30px;
+    margin-top: -22px;
+}
+.car-detail-container .car-detail-info p
+{
+    font-size: 22px;
+}
+.car-detail-container .car-detail-info .cart-buttons
+{
+    display: flex;
+}
+.car-detail-container .cart-buttons .add-btns
+{
+    width: 20%;
+    margin: auto;
+    margin-top: 20px;
+}
+.car-detail-container .cart-buttons .add-btns .quantity
+{
+    font-size: 30px;
+}
+.car-detail-container .car-detail-info p:nth-child(3)
+{
+    font-size: 18px;
+}
+.car-detail-container .car-detail-left .cart-buttons .add-btn
+{
+    width: 100%;
+    margin-top: 10px;
+}
+.car-detail-container .car-detail-left .cart-buttons .cart-btn
+{
+    border-radius: 50%;
+    background-color: black;
+    width: 30px;
+    height: 30px;
+    color: white;
+    font-size: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
