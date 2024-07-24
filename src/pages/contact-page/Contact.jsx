@@ -58,7 +58,7 @@ function Contact() {
             {errors.message && <div className="error">{errors.message}</div>}
           </div>
           {isSubmitted ? (
-            <p style={{ color: 'green' }}>{successMessage}</p>
+            <p style={{ color: 'green' }}>{successMessage} <i className="fa-regular fa-square-check"></i></p>
           ) : (
             <p>Leave us a quick message <i className="fa-regular fa-message"></i></p>
           )}

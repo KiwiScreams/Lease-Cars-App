@@ -1,22 +1,21 @@
-.contact-container
-{
+.contact-container {
     margin-top: 100px;
 }
-.contact-container h1
-{
+
+.contact-container h1 {
     text-align: center;
     font-size: 48px;
     margin-bottom: 20px;
 }
-.contact-container h2
-{
+
+.contact-container h2 {
     text-align: center;
     font-size: 24px;
     font-weight: 700;
     margin-bottom: 50px;
 }
-.contact-container .inputs
-{
+
+.contact-container .inputs {
     width: 60%;
     margin: auto;
     display: flex;
@@ -24,8 +23,8 @@
     align-items: center;
     gap: 40px;
 }
-.contact-container .inputs input
-{
+
+.contact-container .inputs input {
     width: 100%;
     height: 60px;
     display: flex;
@@ -34,8 +33,8 @@
     padding: 0 20px;
     border: 1px solid blue;
 }
-.contact-container textarea
-{
+
+.contact-container textarea {
     width: 100%;
     margin: auto;
     display: block;
@@ -44,19 +43,19 @@
     border: 1px solid blue;
     margin-bottom: 20px;
 }
-.contact-container .input
-{
+
+.contact-container .input {
     width: 50%;
     position: relative;
     margin: auto;
 }
-.contact-container .input-full
-{
+
+.contact-container .input-full {
     width: 60%;
     background-color: black;
 }
-.contact-container .error
-{
+
+.contact-container .error {
     color: red;
     font-weight: 500;
     background-color: white;
@@ -64,62 +63,132 @@
     top: -15px;
     left: 10px;
 }
-.contact-container p
-{
+
+.contact-container p {
     text-align: center;
     margin-bottom: 30px;
 }
-.wheel
-{
+
+.wheel {
     position: absolute;
     bottom: 0px;
-    right: -600px;
+    right: -700px;
 }
-.wheel-animation
-{
+
+.wheel-animation {
     animation: wheel-anim 3s linear;
 }
-.social-container
-{
+
+.social-container {
     position: fixed;
     top: 200px;
     right: 10px;
 }
-.social-container i
-{
+
+.social-container i {
     font-size: 40px;
     display: block;
     margin-bottom: 10px;
 }
-.social-container i:hover
-{
+
+.social-container i:hover {
     transform: scale(1.3);
     rotate: 360deg;
 }
-.social-container a:nth-child(1) i:hover
-{
+
+.social-container a:nth-child(1) i:hover {
     color: #4267B2;
 }
-.social-container a:nth-child(2) i:hover
-{
+
+.social-container a:nth-child(2) i:hover {
     color: #E1306C;
 }
-.social-container a:nth-child(3) i:hover
-{
+
+.social-container a:nth-child(3) i:hover {
     color: #1DA1F2;
 }
-@keyframes wheel-anim
-{
-    0%
-    {
+
+@keyframes wheel-anim {
+    0% {
         bottom: 0px;
-        right: -600px;
+        right: -700px;
         rotate: 360deg;
     }
-    100%
-    {
+
+    100% {
         bottom: 0;
         right: 0;
         opacity: 0;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    .wheel {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .contact-container .inputs {
+        width: 100%;
+    }
+
+    .contact-container .input-full {
+        width: 100%;
+    }
+
+    .social-container i {
+        font-size: 30px;
+        display: block;
+        margin-bottom: 10px;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .contact-container .inputs {
+        width: 100%;
+        flex-direction: column;
+    }
+
+    .contact-container .inputs .input {
+        width: 100%;
+    }
+
+    .contact-container .input-full {
+        width: 100%;
+    }
+
+    .social-container {
+        right: 0;
+    }
+}
+
+@media screen and (max-width: 375px) {
+    .contact-container .inputs {
+        width: 100%;
+        flex-direction: column;
+    }
+
+    .contact-container .inputs .input {
+        width: 100%;
+    }
+
+    .contact-container .input-full {
+        width: 100%;
+    }
+
+    .social-container {
+        right: 0;
+    }
+
+    .contact-container button.btn {
+        padding: 20px 30px;
+        font-size: 18px;
+    }
+
+    .social-container i {
+        font-size: 20px;
+        display: block;
+        margin-bottom: 10px;
     }
 }
