@@ -18,7 +18,7 @@ function Header() {
   window.addEventListener('scroll', changeColor)
   return (
     <>
-      <header className={color ? 'header header-bg' : 'header'}>
+      <header className={color ? 'header header-bg' : 'header'} style={{ backgroundColor: location.pathname === "/" ? "transparent" : "black" }}>
         <h1><NavLink to="/"><img src={logo} alt="logo" /></NavLink></h1>
         <nav>
           <i className="fa-solid fa-bars-staggered bars"></i>
