@@ -45,3 +45,28 @@
     border: 1px solid blue;
     margin-bottom: 50px;
 }
+.wheel
+{
+    position: absolute;
+    bottom: 0px;
+    right: -600px;
+}
+.wheel-animation
+{
+    animation: wheel-anim 3s linear;
+}
+@keyframes wheel-anim
+{
+    0%
+    {
+        bottom: 0px;
+        right: -600px;
+        rotate: 360deg;
+    }
+    100%
+    {
+        bottom: 0;
+        right: 0;
+        opacity: 0;
+    }
+}
