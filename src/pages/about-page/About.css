@@ -1,0 +1,53 @@
+.about
+{
+    margin-top: 100px;
+    width: 100%;
+}
+.about-section
+{
+    background: url(../../assets/images/chuttersnap-gts_Eh4g1lk-unsplash.jpg);
+    background-size: 80%;
+    background-repeat: no-repeat;
+    background-color: white;
+    overflow: hidden;
+    padding: 100px 0;
+}
+.inner-container
+{
+    width: 55%;
+    float: right;
+    background-color: white;
+    padding: 100px 30px;
+}
+.inner-container h1
+{
+    font-size: 30px;
+    text-align: center;
+    margin-bottom: 20px;
+    color: blue;
+}
+.inner-container p
+{
+    font-size: 20px;
+    text-align: justify;
+    margin-bottom: 40px;
+}
+.skills
+{
+    display: flex;
+    justify-content: space-between;
+    width: 50%;
+    margin: auto;
+}
+.skills span
+{
+    border-radius: 50%;
+    width: 70px;
+    height: 70px;
+    border: 3px solid blue;
+    display: flex;
+    font-size: 30px;
+    color: blue;
+    justify-content: center;
+    align-items: center;
+}

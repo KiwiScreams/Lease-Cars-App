@@ -1,7 +1,6 @@
 import { useEffect, useRef, useState } from 'react'
 import wheel from "../../assets/images/wheel.png"
 import './Contact.css'
-import Header from '../../components/header/Header'
 
 function Contact() {
   const [isSubmitted, setIsSubmitted] = useState(false);
