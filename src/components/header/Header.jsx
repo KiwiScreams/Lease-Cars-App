@@ -12,6 +12,9 @@ function Header() {
     }
   };
   window.addEventListener("scroll", changeColor);
+  const handleScrollToTop = () => {
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  };
   return (
     <>
       <header
@@ -21,7 +24,7 @@ function Header() {
         }}
       >
         <h1>
-          <NavLink to="/">
+          <NavLink to="/" onClick={handleScrollToTop}>
             <img src={logo} alt="logo" />
           </NavLink>
         </h1>
@@ -34,6 +37,7 @@ function Header() {
                 className={({ isActive }) =>
                   isActive ? "link active" : "link"
                 }
+                onClick={handleScrollToTop}
               >
                 HOME
               </NavLink>
@@ -44,6 +48,7 @@ function Header() {
                 className={({ isActive }) =>
                   isActive ? "link active" : "link"
                 }
+                onClick={handleScrollToTop}
               >
                 NEW CARS
               </NavLink>
@@ -54,6 +59,7 @@ function Header() {
                 className={({ isActive }) =>
                   isActive ? "link active" : "link"
                 }
+                onClick={handleScrollToTop}
               >
                 ABOUT US
               </NavLink>
@@ -64,6 +70,7 @@ function Header() {
                 className={({ isActive }) =>
                   isActive ? "link active" : "link"
                 }
+                onClick={handleScrollToTop}
               >
                 CONTACT US
               </NavLink>
