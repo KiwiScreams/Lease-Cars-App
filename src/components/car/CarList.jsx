@@ -1,7 +1,12 @@
 import { Link } from "react-router-dom";
 import "./CarList.css";
+import { useNavigate } from "react-router-dom";
 function CarList(props) {
-    const { id, name, price, image, car, monthPrice } = props.data;
+  const { id, name, price, image, car, monthPrice } = props.data;
+  const navigate = useNavigate();
+  const handleNavigateToDetailPage = () => {
+    navigate(car);
+  };
   return (
     <>
       <div className="car">
@@ -13,9 +18,7 @@ function CarList(props) {
           <span>starting from $ {price}</span>
           <h2 className="month-price">$ {monthPrice}/mo</h2>
         </div>
-        <button className="btn">
-          <Link to={car}>see details</Link>
-        </button>
+        <button className="btn" onClick={handleNavigateToDetailPage}>see details</button>
         <br />
       </div>
     </>
