@@ -5,11 +5,12 @@
     left: 0;
     bottom: 0;
     right: 0;
-    background-color: var(--green-clr);
+    background-color: var(--black-clr);
     z-index: 100;
     display: flex;
     justify-content: center;
     align-items: center;
+    width: 100%;
     animation: 3.1s loaderAnim linear;
 }
 @keyframes loaderAnim
@@ -18,7 +19,7 @@
     {
         opacity: 1;
     }
-    50%
+    80%
     {
         opacity: 1;
     }

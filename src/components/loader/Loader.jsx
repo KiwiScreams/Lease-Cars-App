@@ -22,7 +22,7 @@ const Loader = () => {
       <div>
         {show ? (
           <section className="loader">
-            <h1>Vegan World</h1>
+            <h1>D&M</h1>
           </section>
         ) : null}
       </div>
