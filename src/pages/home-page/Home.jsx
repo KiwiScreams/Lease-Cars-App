@@ -13,6 +13,7 @@ function Home() {
   const navigate = useNavigate();
   const handleNavigateToCarsPage = () => {
     navigate("/newcars");
+    window.scrollTo({ top: 0, behavior: "smooth" });
   };
   return (
     <>
