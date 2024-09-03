@@ -7,6 +7,11 @@ function AboutUs() {
       document.body.classList.remove("about-page");
     };
   }, []);
+  const skills = [
+    { icon: "fa-solid fa-temperature-quarter"},
+    { icon: "fa-solid fa-gauge"},
+    { icon: "fa-solid fa-bolt"},
+  ];
   return (
     <>
       <section className="about _flex">
@@ -27,15 +32,12 @@ function AboutUs() {
                 justifyContent: "center",
               }}
             >
-              <span>
-                <i className="fa-solid fa-temperature-quarter"></i>
-              </span>
-              <span>
-                <i className="fa-solid fa-gauge"></i>
-              </span>
-              <span>
-                <i className="fa-solid fa-bolt"></i>
-              </span>
+              {skills.map((skill, index) => (
+                <span key={index}>
+                  <i className={skill.icon}></i>
+                  <p>{skill.name}</p>
+                </span>
+              ))}
             </div>
           </div>
         </div>
