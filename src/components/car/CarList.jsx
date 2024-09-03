@@ -14,7 +14,7 @@ function CarList(props) {
             quantity: 1
         }));
     }
-    console.log(carts);
+    // console.log(carts);
     return (
         <>
             <div className="car">
