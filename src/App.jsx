@@ -6,8 +6,28 @@ import Header from "./components/header/Header";
 import Footer from "./components/footer/Footer";
 import NewCars from "./pages/new-cars-page/NewCars";
 import Detail from "./pages/detail-page/Detail";
-
+import { useLocation } from "react-router-dom";
+import { useState, useEffect } from "react";
 function App() {
+  const location = useLocation();
+  useEffect(() => {
+    switch (true) {
+      case location.pathname === "/":
+        document.title = "D&M LEASING";
+        break;
+      case location.pathname === "/newcars":
+        document.title = "D&M CARS";
+        break;
+      case location.pathname === "/about":
+        document.title = "D&M ABOUT";
+        break;
+      case location.pathname === "/contact":
+        document.title = "D&M CONTACT";
+        break;
+      default:
+        document.title = "D&M LEASING";
+    }
+  }, [location]);
   return (
     <>
       <Header />
