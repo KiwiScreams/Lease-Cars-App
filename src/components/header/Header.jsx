@@ -1,9 +1,11 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import logo from "../../assets/images/Logo.svg";
 import { NavLink } from "react-router-dom";
 import "./Header.css";
+
 function Header() {
   const [color, setColor] = useState(false);
+
   const changeColor = () => {
     if (window.scrollY >= 90) {
       setColor(true);
@@ -11,16 +13,29 @@ function Header() {
       setColor(false);
     }
   };
-  window.addEventListener("scroll", changeColor);
+
+  useEffect(() => {
+    window.addEventListener("scroll", changeColor);
+    return () => {
+      window.removeEventListener("scroll", changeColor);
+    };
+  }, []);
+
   const handleScrollToTop = () => {
     window.scrollTo({ top: 0, behavior: "smooth" });
   };
+
   return (
     <>
       <header
         className={color ? "header header-bg" : "header"}
         style={{
-          backgroundColor: location.pathname === "/" ? "transparent" : "black",
+          backgroundColor:
+            location.pathname === "/"
+              ? color
+                ? "black"
+                : "transparent"
+              : "black",
         }}
       >
         <h1>
