@@ -58,25 +58,41 @@ function NewCars() {
           >
             Electrified
           </button>
-          <button
-            className={rows === 1 ? "active" : ""}
-            onClick={() => handleRowsChange(1)}
-          >
-            1
-          </button>
-          <button
-            className={rows === 2 ? "active" : ""}
-            onClick={() => handleRowsChange(2)}
-          >
-            2
-          </button>
+          <div style={{ display: "flex", gap: "10px" }}>
+            <button
+              className={rows === 1 ? "active" : ""}
+              onClick={() => handleRowsChange(1)}
+            >
+              1
+            </button>
+            <button
+              className={rows === 2 ? "active" : ""}
+              onClick={() => handleRowsChange(2)}
+            >
+              2
+            </button>
+            <button
+              className={rows === 3 ? "active" : ""}
+              onClick={() => handleRowsChange(3)}
+            >
+              3
+            </button>
+            <button
+              className={rows === 4 ? "active" : ""}
+              onClick={() => handleRowsChange(4)}
+            >
+              4
+            </button>
+          </div>
         </div>
         <div
           className="cars-container"
           style={{ gridTemplateColumns: `repeat(${rows}, 1fr)` }}
         >
           {filteredCars.length > 0 ? (
-            filteredCars.map((car) => <Cart key={car.id} data={car} />)
+            filteredCars.map((car) => (
+              <Cart key={car.id} data={car} className={`car-size-${rows}`} />
+            ))
           ) : (
             <p className="no-cars">No cars found in this category.</p>
           )}
