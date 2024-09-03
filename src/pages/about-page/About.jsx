@@ -11,9 +11,9 @@ function AboutUs() {
             <h1>About Us</h1>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi, dolores. Sapiente accusantium voluptas, doloribus sequi similique eius porro, nihil, dolore voluptates veritatis minima sit voluptatibus. Eius laboriosam et maxime a.</p>
             <div className="skills">
-              <span><i class="fa-solid fa-temperature-quarter"></i></span>
-              <span><i class="fa-solid fa-gauge"></i></span>
-              <span><i class="fa-solid fa-bolt"></i></span>
+              <span><i className="fa-solid fa-temperature-quarter"></i></span>
+              <span><i className="fa-solid fa-gauge"></i></span>
+              <span><i className="fa-solid fa-bolt"></i></span>
             </div>
           </div>
         </div>
