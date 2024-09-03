@@ -2,6 +2,7 @@ import "./NewCars.css";
 import { cars } from "../../assets/cars";
 import Cart from "../../components/car/CarList";
 import { useState, useEffect } from "react";
+
 function NewCars() {
   const [selectedCategory, setSelectedCategory] = useState("");
 
@@ -16,9 +17,11 @@ function NewCars() {
       return car.category === selectedCategory;
     }
   });
+
   return (
     <>
       <section className="section-car">
+        <h1>Choose your car</h1>
         <div className="category-buttons">
           <button
             className={selectedCategory === "" ? "active" : ""}
@@ -46,12 +49,15 @@ function NewCars() {
           </button>
         </div>
         <div className="cars-container">
-          {filteredCars.map((car) => (
-            <Cart key={car.id} data={car} />
-          ))}
+          {filteredCars.length > 0 ? (
+            filteredCars.map((car) => <Cart key={car.id} data={car} />)
+          ) : (
+            <p className="no-cars">No cars found in this category.</p>
+          )}
         </div>
       </section>
     </>
   );
 }
+
 export default NewCars;

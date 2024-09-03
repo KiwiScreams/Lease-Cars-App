@@ -6,37 +6,45 @@
   gap: 40px;
   margin: 0 auto;
 }
-.section-car
-{
-    margin-top: 200px;
+.section-car {
+  margin-top: 200px;
 }
-.category-buttons
+.category-buttons {
+  display: flex;
+  justify-content: space-between;
+  width: fit-content;
+  margin: auto;
+  gap: 50px;
+  margin-bottom: 50px;
+}
+.category-buttons button {
+  width: fit-content;
+  padding: 5px 10px;
+  background-color: transparent;
+  border: 3px solid var(--blue-clr);
+  border-radius: 20px;
+  color: var(--blue-clr);
+}
+.category-buttons button.active {
+  background-color: var(--blue-clr);
+  color: var(--white-clr);
+}
+.section-car h1
 {
-    display: flex;
-    justify-content: space-between;
-    width: fit-content;
-    margin: auto;
-    gap: 50px;
     margin-bottom: 50px;
+    font-size: 48px;
+    text-align: center;
+    font-weight: var(--font-weight-700);
 }
-.category-buttons button
-{
-    width: fit-content;
-    padding: 5px 10px;
-    background-color: transparent;
-    border: 3px solid var(--blue-clr);
-    border-radius: 20px;
-
+.no-cars {
+  text-align: center;
+  margin: auto;
+  font-size: 22px;
+  color: var(--blue-clr);
+  font-weight: var(--font-weight-400);
 }
-.category-buttons button.active
-{
-    background-color: var(--blue-clr);
-    color: var(--white-clr);
-}
-@media screen and (max-width: 500px)
-{
-    .category-buttons
-    {
-        gap: 10px;
-    }
+@media screen and (max-width: 500px) {
+  .category-buttons {
+    gap: 10px;
+  }
 }
