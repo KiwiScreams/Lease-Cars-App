@@ -18,7 +18,7 @@ function NewCars() {
   });
   return (
     <>
-      <div className="cars-container">
+      <section className="section-car">
         <div className="category-buttons">
           <button
             className={selectedCategory === "" ? "active" : ""}
@@ -45,10 +45,12 @@ function NewCars() {
             Mercedes
           </button>
         </div>
-        {filteredCars.map((car) => (
-          <Cart key={car.id} data={car} />
-        ))}
-      </div>
+        <div className="cars-container">
+          {filteredCars.map((car) => (
+            <Cart key={car.id} data={car} />
+          ))}
+        </div>
+      </section>
     </>
   );
 }
