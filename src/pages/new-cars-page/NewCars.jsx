@@ -5,9 +5,14 @@ import { useState, useEffect } from "react";
 
 function NewCars() {
   const [selectedCategory, setSelectedCategory] = useState("");
+  const [rows, setRows] = useState(1);
 
   const handleCategoryChange = (category) => {
     setSelectedCategory(category);
+  };
+
+  const handleRowsChange = (rows) => {
+    setRows(rows);
   };
 
   const filteredCars = cars.filter((car) => {
@@ -53,8 +58,23 @@ function NewCars() {
           >
             Electrified
           </button>
+          <button
+            className={rows === 1 ? "active" : ""}
+            onClick={() => handleRowsChange(1)}
+          >
+            1
+          </button>
+          <button
+            className={rows === 2 ? "active" : ""}
+            onClick={() => handleRowsChange(2)}
+          >
+            2
+          </button>
         </div>
-        <div className="cars-container">
+        <div
+          className="cars-container"
+          style={{ gridTemplateColumns: `repeat(${rows}, 1fr)` }}
+        >
           {filteredCars.length > 0 ? (
             filteredCars.map((car) => <Cart key={car.id} data={car} />)
           ) : (

@@ -5,16 +5,18 @@
   flex-wrap: wrap;
   gap: 40px;
   margin: 0 auto;
+  display: grid;
+  gap: 10px;
 }
 .section-car {
   margin-top: 200px;
 }
 .category-buttons {
   display: flex;
-  justify-content: space-between;
   width: fit-content;
   margin: auto;
   gap: 50px;
+  flex-wrap: wrap;
   margin-bottom: 50px;
 }
 .category-buttons button {
@@ -29,12 +31,11 @@
   background-color: var(--blue-clr);
   color: var(--white-clr);
 }
-.section-car h1
-{
-    margin-bottom: 50px;
-    font-size: 48px;
-    text-align: center;
-    font-weight: var(--font-weight-700);
+.section-car h1 {
+  margin-bottom: 50px;
+  font-size: 48px;
+  text-align: center;
+  font-weight: var(--font-weight-700);
 }
 .no-cars {
   text-align: center;
@@ -48,4 +49,8 @@
     gap: 12px;
     flex-wrap: wrap;
   }
-} 
+  .cars-container {
+    display: flex;
+    gap: 10px;
+  }
+}
