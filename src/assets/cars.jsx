@@ -20,7 +20,8 @@ export const cars =
             monthPrice: 650,
             image: car1,
             description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived, Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived ",
-            car: "car-1"
+            car: "car-1",
+            category: "ford",
         },
         {
             id: 2,
@@ -29,7 +30,8 @@ export const cars =
             monthPrice: 450,
             image: car2,
             description: "jgkfldjkjkjgkfldjkjkl",
-            car: "car-2"
+            car: "car-2",
+            category: "ford"
         },
         {
             id: 3,
@@ -38,7 +40,8 @@ export const cars =
             monthPrice: 400,
             image: car3,
             description: "jgkfldjkjkjgkfldjkjkl",
-            car: "car-3"
+            car: "car-3",
+            category: "mercedes"
         },
         {
             id: 4,
@@ -47,7 +50,8 @@ export const cars =
             monthPrice: 510,
             image: car4,
             description: "jgkfldjkjkjgkfldjkjkl",
-            car: "car-4"
+            car: "car-4",
+            category: "ford"
         },
         {
             id: 5,
@@ -56,7 +60,8 @@ export const cars =
             monthPrice: 1013,
             image: car5,
             description: "jgkfldjkjkjgkfldjkjkl",
-            car: "car-5"
+            car: "car-5",
+            category: "ford"
         },
         {
             id: 6,
@@ -65,7 +70,8 @@ export const cars =
             monthPrice: 739,
             image: car6,
             description: "jgkfldjkjkjgkfldjkjkl",
-            car: "car-6"
+            car: "car-6",
+            category: "ford"
         },
         {
             id: 7,
@@ -74,7 +80,8 @@ export const cars =
             monthPrice: 554,
             image: car7,
             description: "jgkfldjkjkjgkfldjkjkl",
-            car: "car-7"
+            car: "car-7",
+            category: "ford"
         },
         {
             id: 8,
@@ -83,7 +90,8 @@ export const cars =
             monthPrice: 528,
             image: car8,
             description: "jgkfldjkjkjgkfldjkjkl",
-            car: "car-8"
+            car: "car-8",
+            category: "ford"
         },
         {
             id: 9,
@@ -92,7 +100,8 @@ export const cars =
             monthPrice: 591,
             image: car9,
             description: "jgkfldjkjkjgkfldjkjkl",
-            car: "car-9"
+            car: "car-9",
+            category: "ford"
         },
         {
             id: 10,
@@ -101,7 +110,8 @@ export const cars =
             monthPrice: 528,
             image: car10,
             description: "jgkfldjkjkjgkfldjkjkl",
-            car: "car-10"
+            car: "car-10",
+            category: "ford"
         },
         {
             id: 11,
@@ -110,7 +120,8 @@ export const cars =
             monthPrice: 471,
             image: car11,
             description: "jgkfldjkjkjgkfldjkjkl",
-            car: "car-11"
+            car: "car-11",
+            category: "ford"
         },
         {
             id: 12,
@@ -119,6 +130,7 @@ export const cars =
             monthPrice: 997,
             image: car12,
             description: "jgkfldjkjkjgkfldjkjkl",
-            car: "car-12"
+            car: "car-12",
+            category: "ford"
         },
     ]
