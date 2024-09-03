@@ -1,12 +1,7 @@
-import { useSelector } from "react-redux";
 import { Link } from "react-router-dom";
-import { useDispatch } from "react-redux";
 import "./CarList.css";
 function CarList(props) {
     const { id, name, price, image, car, monthPrice } = props.data;
-    
-//   const carInfo = props.data?.carInfo;
-//   const { id, name, price, image, car, monthPrice } = carInfo;
   return (
     <>
       <div className="car">

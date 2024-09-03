@@ -1,8 +1,7 @@
 import "./Detail.css"
 import React, { useEffect, useState } from "react"
-import { Outlet, useParams } from "react-router-dom"
+import { useParams } from "react-router-dom"
 import { cars } from "../../assets/cars"
-import { useDispatch } from "react-redux"
 function Detail() {
     const { name } = useParams();
     console.log(name);

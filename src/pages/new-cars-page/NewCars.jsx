@@ -1,5 +1,4 @@
 import "./NewCars.css";
-import { Outlet } from "react-router-dom";
 import { cars } from "../../assets/cars";
 import Cart from "../../components/car/CarList";
 function NewCars() {

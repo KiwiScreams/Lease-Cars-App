@@ -1,4 +1,3 @@
-import { useState } from 'react'
 import './About.css'
 import Header from '../../components/header/Header'
 function AboutUs() {

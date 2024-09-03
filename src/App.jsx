@@ -7,7 +7,7 @@ import Footer from "./components/footer/Footer";
 import NewCars from "./pages/new-cars-page/NewCars";
 import Detail from "./pages/detail-page/Detail";
 import { useLocation } from "react-router-dom";
-import { useState, useEffect } from "react";
+import { useEffect } from "react";
 function App() {
   const location = useLocation();
   useEffect(() => {
