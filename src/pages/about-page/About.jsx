@@ -19,7 +19,14 @@ function AboutUs() {
               eius porro, nihil, dolore voluptates veritatis minima sit
               voluptatibus. Eius laboriosam et maxime a.
             </p>
-            <div className="skills">
+            <div
+              className="skills"
+              style={{
+                gap: "10px",
+                flexWrap: "wrap",
+                justifyContent: "center",
+              }}
+            >
               <span>
                 <i className="fa-solid fa-temperature-quarter"></i>
               </span>
