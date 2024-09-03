@@ -1,76 +1,62 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-*
-{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    list-style-type: none;
-    text-decoration: none;
-    border: none;
-    outline: none;
-    transition: 0.3s;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style-type: none;
+  text-decoration: none;
+  border: none;
+  outline: none;
+  transition: 0.3s;
 }
-:root
-{
-    /* COLORS */
-    --white-clr: #fff;
-    --blue-clr: #0066FF;
-    --black-clr: #151515;
-    --grey-clr: #E8E8E8;
-    /* FONTSIZE */
-    --font-size: 16px;
-    /* FONTWEIGHT */
-    --font-weight-700: 700;
-    --font-weight-400: 400;
+:root {
+  --white-clr: #fff;
+  --blue-clr: #0066ff;
+  --black-clr: #151515;
+  --grey-clr: #e8e8e8;
+  --font-size: 16px;
+  --font-weight-700: 700;
+  --font-weight-400: 400;
 }
-::-webkit-scrollbar
-{
-    display: block;
-    width: 20px;
+::-webkit-scrollbar {
+  display: block;
+  width: 20px;
 }
-::-webkit-scrollbar-track
-{
-    background-color: var(--white-clr);
+::-webkit-scrollbar-track {
+  background-color: var(--white-clr);
 }
-::-webkit-scrollbar-thumb
-{
-    background-color: var(--black-clr);
-    border-radius: 50px;
+::-webkit-scrollbar-thumb {
+  background-color: var(--black-clr);
+  border-radius: 50px;
 }
-body
-{
-    overflow-x: hidden;
+body {
+  overflow-x: hidden;
 }
-._flex
-{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+._flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
-button.btn
-{
-    padding: 24px 112px;
-    background-color: var(--black-clr);
-    color: var(--white-clr);
-    text-align: center;
-    font-size: 22px;
-    font-weight: var(--font-weight-700);
-    text-transform: uppercase;
-    display: block;
-    margin: auto;
+button.btn {
+  padding: 24px 112px;
+  background-color: var(--black-clr);
+  color: var(--white-clr);
+  text-align: center;
+  font-size: 22px;
+  font-weight: var(--font-weight-700);
+  text-transform: uppercase;
+  display: block;
+  margin: auto;
 }
-button.btn:hover
-{
-    background-color: var(--blue-clr);
+button.btn:hover {
+  background-color: var(--blue-clr);
 }
 
-a:hover
-{
-    color: var(--blue-clr);
+a:hover {
+  color: var(--blue-clr);
 }
-#SLM
-{
-    font-weight: 700;
+#SLM {
+  font-weight: 700;
 }
