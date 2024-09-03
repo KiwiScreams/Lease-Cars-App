@@ -64,6 +64,10 @@ header .nav-cart span
     align-items: center;
     color: var(--white-clr);
 }
+.login
+{
+    background-color: var(--blue-clr);
+}
 @media screen and (max-width: 800px)
 {
     .header

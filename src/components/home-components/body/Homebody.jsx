@@ -65,7 +65,7 @@ function Homebody() {
             <section>
                 <h1 className="lease">WELCOME TO D&M LEASING</h1>
                 <h2 className="similar">Find out how easy it is to lease from D&M</h2>
-                <video controls>
+                <video autoPlay loop muted>
                     <source src={carVideo} type="video/mp4">
                     </source>
                 </video>
