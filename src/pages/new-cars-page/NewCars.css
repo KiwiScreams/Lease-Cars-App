@@ -63,11 +63,6 @@
   width: 180px;
   height: 120px;
 }
-
-.car-size-4 {
-  width: 140px;
-  height: 90px;
-}
 @media screen and (max-width: 900px) {
   .category-buttons {
     gap: 12px;

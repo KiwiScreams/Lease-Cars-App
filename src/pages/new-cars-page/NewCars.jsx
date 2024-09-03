@@ -58,7 +58,7 @@ function NewCars() {
           >
             Electrified
           </button>
-          <div style={{ display: "flex", gap: "10px" }}>
+          <div style={{ display: "flex", gap: "4px" }}>
             <button
               className={rows === 1 ? "active" : ""}
               onClick={() => handleRowsChange(1)}
@@ -76,12 +76,6 @@ function NewCars() {
               onClick={() => handleRowsChange(3)}
             >
               3
-            </button>
-            <button
-              className={rows === 4 ? "active" : ""}
-              onClick={() => handleRowsChange(4)}
-            >
-              4
             </button>
           </div>
         </div>
