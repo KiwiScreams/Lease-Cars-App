@@ -1,9 +1,6 @@
 import { useState } from "react";
 import logo from "../../assets/images/Logo.svg";
 import { NavLink } from "react-router-dom";
-import Home from "../../pages/home-page/Home";
-import AboutUs from "../../pages/about-page/About";
-import Contact from "../../pages/contact-page/Contact";
 import "./Header.css";
 function Header() {
   const [color, setColor] = useState(false);
@@ -73,10 +70,6 @@ function Header() {
             </li>
           </ul>
         </nav>
-        <div className="nav-cart">
-          <i className="fa-solid fa-cart-shopping"></i>
-          <span className="count">0</span>
-        </div>
       </header>
     </>
   );
