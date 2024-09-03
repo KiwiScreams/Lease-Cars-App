@@ -4,6 +4,8 @@ import car_image_1 from "../../assets/images/car.png";
 import Homebody from "../../components/home-components/body/Homebody.jsx";
 import car_image_3 from "../../assets/images/yuvraj-singh-tmAynVA_ihE-unsplash.jpg";
 import { useNavigate } from "react-router-dom";
+import Loader from "../../components/loader/Loader.jsx";
+import { useState, useEffect } from "react";
 function Home() {
   let slides = [
     car_image_1,
@@ -15,18 +17,31 @@ function Home() {
     navigate("/newcars");
     window.scrollTo({ top: 0, behavior: "smooth" });
   };
+  const [loading, setLoading] = useState(true);
+  useEffect(() => {
+    const timer = setTimeout(() => {
+      setLoading(false);
+    }, 2000);
+    return () => clearTimeout(timer);
+  }, []);
   return (
     <>
-      <div className="image-container">
-        <Carousel slides={slides} />
-        <div className="content">
-          <h1>Leasing From D&M</h1>
-          <button className="btn" onClick={handleNavigateToCarsPage}>
-            find a car
-          </button>
-        </div>
-      </div>
-      <Homebody />
+      {loading ? (
+        <Loader />
+      ) : (
+        <>
+          <div className="image-container">
+            <Carousel slides={slides} />
+            <div className="content">
+              <h1>Leasing From D&M</h1>
+              <button className="btn" onClick={handleNavigateToCarsPage}>
+                find a car
+              </button>
+            </div>
+          </div>
+          <Homebody />
+        </>
+      )}
     </>
   );
 }
