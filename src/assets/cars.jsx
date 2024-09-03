@@ -21,7 +21,7 @@ export const cars =
             image: car1,
             description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived, Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived ",
             car: "car-1",
-            category: "ford",
+            category: "suv",
         },
         {
             id: 2,
@@ -31,7 +31,7 @@ export const cars =
             image: car2,
             description: "jgkfldjkjkjgkfldjkjkl",
             car: "car-2",
-            category: "ford"
+            category: "suv"
         },
         {
             id: 3,
@@ -41,7 +41,7 @@ export const cars =
             image: car3,
             description: "jgkfldjkjkjgkfldjkjkl",
             car: "car-3",
-            category: "mercedes"
+            category: "trucks"
         },
         {
             id: 4,
@@ -51,7 +51,7 @@ export const cars =
             image: car4,
             description: "jgkfldjkjkjgkfldjkjkl",
             car: "car-4",
-            category: "ford"
+            category: "suv"
         },
         {
             id: 5,
@@ -61,7 +61,7 @@ export const cars =
             image: car5,
             description: "jgkfldjkjkjgkfldjkjkl",
             car: "car-5",
-            category: "ford"
+            category: "trucks"
         },
         {
             id: 6,
@@ -71,7 +71,7 @@ export const cars =
             image: car6,
             description: "jgkfldjkjkjgkfldjkjkl",
             car: "car-6",
-            category: "ford"
+            category: "electrified"
         },
         {
             id: 7,
@@ -81,7 +81,7 @@ export const cars =
             image: car7,
             description: "jgkfldjkjkjgkfldjkjkl",
             car: "car-7",
-            category: "ford"
+            category: "electrified"
         },
         {
             id: 8,
@@ -91,7 +91,7 @@ export const cars =
             image: car8,
             description: "jgkfldjkjkjgkfldjkjkl",
             car: "car-8",
-            category: "ford"
+            category: "electrified"
         },
         {
             id: 9,
@@ -101,7 +101,7 @@ export const cars =
             image: car9,
             description: "jgkfldjkjkjgkfldjkjkl",
             car: "car-9",
-            category: "ford"
+            category: "electrified"
         },
         {
             id: 10,
@@ -111,7 +111,7 @@ export const cars =
             image: car10,
             description: "jgkfldjkjkjgkfldjkjkl",
             car: "car-10",
-            category: "ford"
+            category: "suv"
         },
         {
             id: 11,
@@ -121,7 +121,7 @@ export const cars =
             image: car11,
             description: "jgkfldjkjkjgkfldjkjkl",
             car: "car-11",
-            category: "ford"
+            category: "trucks"
         },
         {
             id: 12,
@@ -131,6 +131,6 @@ export const cars =
             image: car12,
             description: "jgkfldjkjkjgkfldjkjkl",
             car: "car-12",
-            category: "ford"
+            category: "trucks"
         },
     ]

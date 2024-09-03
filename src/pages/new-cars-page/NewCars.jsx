@@ -30,22 +30,28 @@ function NewCars() {
             All
           </button>
           <button
-            className={selectedCategory === "ford" ? "active" : ""}
-            onClick={() => handleCategoryChange("ford")}
+            className={selectedCategory === "minivan" ? "active" : ""}
+            onClick={() => handleCategoryChange("minivan")}
           >
-            Ford
+            Car and Minivan
           </button>
           <button
-            className={selectedCategory === "bmw" ? "active" : ""}
-            onClick={() => handleCategoryChange("bmw")}
+            className={selectedCategory === "trucks" ? "active" : ""}
+            onClick={() => handleCategoryChange("trucks")}
           >
-            BMW
+            Trucks
           </button>
           <button
-            className={selectedCategory === "mercedes" ? "active" : ""}
-            onClick={() => handleCategoryChange("mercedes")}
+            className={selectedCategory === "suv" ? "active" : ""}
+            onClick={() => handleCategoryChange("suv")}
           >
-            Mercedes
+            Crossovers & SUVs
+          </button>
+          <button
+            className={selectedCategory === "electrified" ? "active" : ""}
+            onClick={() => handleCategoryChange("electrified")}
+          >
+            Electrified
           </button>
         </div>
         <div className="cars-container">

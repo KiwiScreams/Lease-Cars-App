@@ -43,8 +43,9 @@
   color: var(--blue-clr);
   font-weight: var(--font-weight-400);
 }
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 900px) {
   .category-buttons {
-    gap: 10px;
+    gap: 12px;
+    flex-wrap: wrap;
   }
-}
+} 
