@@ -42,6 +42,8 @@
   padding: 20px;
   border: 1px solid blue;
   margin-bottom: 20px;
+  resize: none;
+  height: 180px;
 }
 
 .contact-container .input {
@@ -144,7 +146,7 @@
   }
 }
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 650px) {
   .contact-container .inputs {
     width: 100%;
     flex-direction: column;
