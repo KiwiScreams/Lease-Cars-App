@@ -1,99 +1,81 @@
-.header
-{
-    padding: 20px 360px 20px 360px;
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    z-index: 10;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    backdrop-filter: blur(10px);
+.header {
+  padding: 20px 360px 20px 360px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 10;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  backdrop-filter: blur(10px);
 }
-.header-bg
-{
-    background-color: var(--black-clr);
-    padding: 4px 200px;
+.header-bg {
+  background-color: var(--black-clr);
+  padding: 4px 200px;
 }
-header nav ul
-{
-    gap: 36px;
+header nav ul {
+  gap: 36px;
 }
-.link
-{
-    padding: 10px 10px;
-    color: var(--white-clr);
-    font-size: 20px;
-    font-weight: var(--font-weight-700);
+.link {
+  padding: 10px 10px;
+  color: var(--white-clr);
+  font-size: 20px;
+  font-weight: var(--font-weight-700);
 }
-header .link.active
-{
-    color: var(--blue-clr);
+header .link.active {
+  color: var(--blue-clr);
 }
-header .bars
-{
-    font-size: 22px;
-    color: var(--white-clr);
-    -webkit-text-stroke: 1px black;
+header .bars {
+  font-size: 22px;
+  color: var(--white-clr);
+  -webkit-text-stroke: 1px black;
+  display: none;
+  margin-right: 40px;
+}
+header .nav-cart {
+  position: relative;
+}
+header .nav-cart i {
+  font-size: 24px;
+  color: var(--white-clr);
+}
+header .nav-cart span {
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  background-color: var(--blue-clr);
+  border-radius: 50%;
+  text-align: center;
+  top: 10px;
+  left: 14px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--white-clr);
+}
+.login {
+  background-color: var(--blue-clr);
+}
+@media screen and (max-width: 800px) {
+  .header {
+    padding: 20px 10px;
+  }
+  .header-bg {
+    padding: 2px;
+  }
+  header nav ul {
+    gap: 2px;
+  }
+  .link {
+    font-size: 18px;
+  }
+}
+@media screen and (max-width: 500px) {
+  header .bars {
+    display: block;
+  }
+  header nav .header-ul {
     display: none;
-    margin-right: 40px;
-}
-header .nav-cart
-{
-    position: relative;
-}
-header .nav-cart i
-{
-    font-size: 24px;
-    color: var(--white-clr);
-}
-header .nav-cart span
-{
-    width: 20px;
-    height: 20px;
-    position: absolute;
-    background-color: var(--blue-clr);
-    border-radius: 50%;
-    text-align: center;
-    top: 10px;
-    left: 14px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: var(--white-clr);
-}
-.login
-{
-    background-color: var(--blue-clr);
-}
-@media screen and (max-width: 800px)
-{
-    .header
-    {
-        padding: 20px 10px;
-    }
-    .header-bg
-    {
-        padding: 2px;
-    }
-    header nav ul
-    {
-        gap: 2px;
-    }
-    .link
-    {
-        font-size: 18px;
-    }
-}
-@media screen and (max-width: 500px)
-{
-    header .bars
-    {
-        display: block;
-    }
-    header nav .header-ul
-    {
-        display: none;
-    }
+  }
 }

@@ -1,4 +1,3 @@
-import { Link } from "react-router-dom";
 import "./CarList.css";
 import { useNavigate } from "react-router-dom";
 function CarList(props) {
@@ -18,7 +17,9 @@ function CarList(props) {
           <span>starting from $ {price}</span>
           <h2 className="month-price">$ {monthPrice}/mo</h2>
         </div>
-        <button className="btn" onClick={handleNavigateToDetailPage}>see details</button>
+        <button className="btn" onClick={handleNavigateToDetailPage}>
+          see details
+        </button>
         <br />
       </div>
     </>
