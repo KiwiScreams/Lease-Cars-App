@@ -31,11 +31,16 @@ function Detail() {
             <div className="car-detail-image">
               <img src={detail.image} alt="" />
             </div>
+            <span className="price-span">{detail.price}$</span>
           </div>
           <div className="car-detail-info">
             <h2>{detail.name}</h2>
-            <p>starting price {detail.price} $</p>
+
             <p>{detail.description}</p>
+            <p className="price">
+              starting price:
+              <span className="price-span">{detail.price}$</span>
+            </p>
           </div>
         </div>
       )}
