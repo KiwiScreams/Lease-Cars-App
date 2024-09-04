@@ -5,8 +5,6 @@
   flex-wrap: wrap;
   gap: 40px;
   margin: 0 auto;
-  display: grid;
-  gap: 10px;
 }
 .section-car {
   margin-top: 200px;
@@ -43,25 +41,6 @@
   font-size: 22px;
   color: var(--blue-clr);
   font-weight: var(--font-weight-400);
-}
-.cars-container {
-  display: grid;
-  gap: 10px;
-}
-
-.car-size-1 {
-  width: 300px;
-  height: 200px;
-}
-
-.car-size-2 {
-  width: 220px;
-  height: 150px;
-}
-
-.car-size-3 {
-  width: 180px;
-  height: 120px;
 }
 @media screen and (max-width: 900px) {
   .category-buttons {
