@@ -33,7 +33,7 @@ function Detail() {
             </div>
           </div>
           <div className="car-detail-info">
-            <h1>{detail.name}</h1>
+            <h2>{detail.name}</h2>
             <p>starting price {detail.price} $</p>
             <p>{detail.description}</p>
           </div>
