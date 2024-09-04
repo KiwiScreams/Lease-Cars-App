@@ -6,15 +6,10 @@ import Loader from "../../components/loader/Loader";
 
 function NewCars() {
   const [selectedCategory, setSelectedCategory] = useState("");
-  const [rows, setRows] = useState(1);
   const [loading, setLoading] = useState(true);
 
   const handleCategoryChange = (category) => {
     setSelectedCategory(category);
-  };
-
-  const handleRowsChange = (rows) => {
-    setRows(rows);
   };
 
   const filteredCars = cars.filter((car) => {
@@ -68,35 +63,10 @@ function NewCars() {
             >
               Electrified
             </button>
-            <div style={{ display: "flex", gap: "4px" }}>
-              <button
-                className={rows === 1 ? "active" : ""}
-                onClick={() => handleRowsChange(1)}
-              >
-                1
-              </button>
-              <button
-                className={rows === 2 ? "active" : ""}
-                onClick={() => handleRowsChange(2)}
-              >
-                2
-              </button>
-              <button
-                className={rows === 3 ? "active" : ""}
-                onClick={() => handleRowsChange(3)}
-              >
-                3
-              </button>
-            </div>
           </div>
-          <div
-            className="cars-container"
-            style={{ gridTemplateColumns: `repeat(${rows}, 1fr)` }}
-          >
+          <div className="cars-container">
             {filteredCars.length > 0 ? (
-              filteredCars.map((car) => (
-                <Cart key={car.id} data={car} className={`car-size-${rows}`} />
-              ))
+              filteredCars.map((car) => <Cart key={car.id} data={car} />)
             ) : (
               <p className="no-cars">No cars found in this category.</p>
             )}

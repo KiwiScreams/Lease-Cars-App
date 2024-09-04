@@ -5,7 +5,6 @@ import { cars } from "../../assets/cars";
 import Loader from "../../components/loader/Loader";
 function Detail() {
   const { name } = useParams();
-  console.log(name);
   const [detail, setDetail] = useState([]);
   useEffect(() => {
     const findDetail = cars.filter((car) => car.car === name);
