@@ -9,14 +9,6 @@ const Loader = () => {
     }, 3000);
   }, []);
 
-  useEffect(() => {
-    if (show) {
-      document.body.classList.add("no-scroll");
-    } else {
-      document.body.classList.remove("no-scroll");
-    }
-  }, [show]);
-
   return (
     <>
       <div>
