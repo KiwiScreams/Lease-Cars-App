@@ -11,6 +11,7 @@
   align-items: center;
   width: 100%;
   animation: 3.1s loaderAnim linear;
+  z-index: 20;
 }
 @keyframes loaderAnim {
   0% {
